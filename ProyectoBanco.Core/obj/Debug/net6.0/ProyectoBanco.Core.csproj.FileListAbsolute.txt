@@ -1,0 +1,12 @@
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\bin\Debug\net6.0\ProyectoBanco.Core.deps.json
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\bin\Debug\net6.0\ProyectoBanco.Core.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\bin\Debug\net6.0\ProyectoBanco.Core.pdb
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.csproj.AssemblyReference.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.AssemblyInfoInputs.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.AssemblyInfo.cs
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.csproj.CoreCompileInputs.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\refint\ProyectoBanco.Core.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ProyectoBanco.Core.pdb
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Core\obj\Debug\net6.0\ref\ProyectoBanco.Core.dll

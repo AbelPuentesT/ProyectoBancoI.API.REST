@@ -1,0 +1,17 @@
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Infrastructure.deps.json
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Infrastructure.runtimeconfig.json
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Infrastructure.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Infrastructure.pdb
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Core.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\bin\Debug\net6.0\ProyectoBanco.Core.pdb
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.csproj.AssemblyReference.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.AssemblyInfoInputs.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.AssemblyInfo.cs
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.csproj.CoreCompileInputs.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.csproj.CopyComplete
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\refint\ProyectoBanco.Infrastructure.dll
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.pdb
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ProyectoBanco.Infrastructure.genruntimeconfig.cache
+G:\TechnicalTest\ProyectoBanco\ProyectoBanco\ProyectoBanco.Infrastructure\obj\Debug\net6.0\ref\ProyectoBanco.Infrastructure.dll
