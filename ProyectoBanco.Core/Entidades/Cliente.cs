@@ -23,6 +23,6 @@ public partial class Cliente : EntidadBase
     public virtual ICollection<Cuenta> Cuentas { get; } = new List<Cuenta>();
 
     public virtual ICollection<Movimiento> Movimientos { get; } = new List<Movimiento>();
-    public Seguridad Seguridad { get; set; } = null!;
+    public virtual Seguridad Seguridad { get; set; } = null!;
 
 }

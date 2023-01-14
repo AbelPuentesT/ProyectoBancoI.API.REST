@@ -2,7 +2,7 @@
 {
     public enum RolEspecifico
     {
-        Administrador,
-        Cliente
+        Cliente,
+        Administrador
     }
 }

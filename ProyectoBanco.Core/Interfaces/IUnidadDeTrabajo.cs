@@ -6,7 +6,7 @@ namespace ProyectoBanco.Core.Interfaces
     {
         IOpcionesPaginacion OpcionesPaginacion { get; }
         IRepositorioBase<Cliente> RepositorioCliente { get; }
-        IRepositorioBase<Movimiento> RepositorioMovimiento { get; }
+        IRepositorioMovimiento RepositorioMovimiento { get; }
         IRepositorioBase<Cuenta> RepositorioCuenta { get; }
         IRepositorioSeguridad RepositorioSeguridad { get; }
 

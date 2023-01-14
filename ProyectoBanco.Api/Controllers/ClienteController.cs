@@ -14,6 +14,7 @@ using System.Net;
 
 namespace ProyectoBanco.Api.Controllers
 {
+    [Authorize(Roles = nameof(RolEspecifico.Administrador))]
     [Route("api/[controller]")]
     [ApiController]
     public class ClienteController : ControllerBase
@@ -30,7 +31,6 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // GET: api/Cliente
-        //[Authorize]
         [HttpGet(Name = nameof(ConsultarTodosLosClientes))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<ClienteDTO>>))]
         [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ApiResponse<IEnumerable<ClienteDTO>>))]
@@ -54,7 +54,6 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // GET: api/Cliente/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpGet("{id}")]
         public async Task<IActionResult> ConsultarCliente(int id)
         {
@@ -65,7 +64,6 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // POST: api/Cliente
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpPost]
         public async Task<IActionResult> CrearCliente(ClienteDTO clienteDTO)
         {
@@ -78,7 +76,6 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // PUT: api/Cliente/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpPut]
         public async Task<IActionResult> ModificarCliente(int id, ClienteDTO clienteDTO)
         {
@@ -91,7 +88,6 @@ namespace ProyectoBanco.Api.Controllers
 
 
         // DELETE: api/Cliente/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> EliminarCliente(int id)
         {

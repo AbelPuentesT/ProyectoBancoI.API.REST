@@ -14,12 +14,12 @@ namespace ProyectoBanco.Infrastructure.Servicios
     {
         private readonly IConfiguration _configuration;
         private readonly ISeguridadServicio _securityService;
-        private readonly IContrasenaServicio _passwordService;
-        public TokenService(IConfiguration configuration, ISeguridadServicio securityService, IContrasenaServicio passwordService)
+        private readonly IContrasenaServicio _contrasenaServicio;
+        public TokenService(IConfiguration configuration, ISeguridadServicio securityService, IContrasenaServicio contrasenaServicio)
         {
             _configuration = configuration;
             _securityService = securityService;
-            _passwordService = passwordService;
+            _contrasenaServicio = contrasenaServicio;
         }
         public async Task<(bool, Seguridad)> ValidarUsuario(UsuarioLogin login)
         {
@@ -28,7 +28,7 @@ namespace ProyectoBanco.Infrastructure.Servicios
             {
                 throw new ExcepcionesDeNegocio("Usuario no existe");
             }
-            var isValid = _passwordService.Check(user.SegContrasena, login.Contrasena);
+            var isValid = _contrasenaServicio.Check(user.SegContrasena, login.Contrasena);
             return (isValid, user);
         }
 

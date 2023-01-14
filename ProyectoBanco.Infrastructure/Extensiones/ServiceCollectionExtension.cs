@@ -44,7 +44,6 @@ namespace ProyectoBanco.Infrastructure.Extensiones
             builder.Services.AddTransient<IUnidadDeTrabajo, UnidadDeTrabajo>();
             builder.Services.AddTransient<ITokenService, TokenService>() ;
             builder.Services.AddTransient<ISeguridadServicio, SeguridadServicio>();
-            //builder.Services.AddTransient<IOpcionesPaginacion, OpcionesPaginacion>();
             builder.Services.AddSingleton<IContrasenaServicio, ContrasenaServicio>();
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped(typeof(IRepositorioBase<>), typeof(RepositorioBase<>));

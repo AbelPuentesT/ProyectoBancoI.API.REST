@@ -1,26 +1,28 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoBanco.Core.DTOs;
 using ProyectoBanco.Core.Entidades;
+using ProyectoBanco.Core.Enumerations;
 using ProyectoBanco.Core.Interfaces;
 using ProyectoBanco.Infrastructure.Interfaces;
-using ProyectoBanco.Infrastructure.Repositorios;
 
 namespace ProyectoBanco.Api.Controllers
 {
+    //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
     [Route("api/[controller]")]
     [ApiController]
     public class SeguridadController : ControllerBase
     {
         private readonly ISeguridadServicio _repositorioSeguridad;
         private readonly IMapper _mapper;
-        private readonly IContrasenaServicio _passwordService;
+        private readonly IContrasenaServicio _contrasenaServicio;
 
-        public SeguridadController(ISeguridadServicio repositorioSeguridad, IMapper mapper, IContrasenaServicio passwordService)
+        public SeguridadController(ISeguridadServicio repositorioSeguridad, IMapper mapper, IContrasenaServicio contrasenaServicio)
         {
             _repositorioSeguridad = repositorioSeguridad;
             _mapper = mapper;
-            _passwordService = passwordService;
+            _contrasenaServicio = contrasenaServicio;
 
         }
 
@@ -29,7 +31,7 @@ namespace ProyectoBanco.Api.Controllers
         public async Task<IActionResult> PostSucurity(SeguridadDTO seguridadDTO)
         {
             var seguridad = _mapper.Map<Seguridad>(seguridadDTO);
-            seguridad.SegContrasena = _passwordService.Hash(seguridad.SegContrasena);
+            seguridad.SegContrasena = _contrasenaServicio.Hash(seguridad.SegContrasena);
             await _repositorioSeguridad.RegistarCliente(seguridad);
             return Ok();
         }

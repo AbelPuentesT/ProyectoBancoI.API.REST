@@ -1,6 +1,4 @@
 ﻿using ProyectoBanco.Core.Enumerations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace ProyectoBanco.Core.Entidades;
 
@@ -14,5 +12,5 @@ public partial class Seguridad : EntidadBase
 
     public RolEspecifico Rol { get; set; }
     public int ClienteID { get; set; }
-    public Cliente Cliente { get; set; } = null!;
+    public virtual Cliente Cliente { get; set; } = null!;
 }

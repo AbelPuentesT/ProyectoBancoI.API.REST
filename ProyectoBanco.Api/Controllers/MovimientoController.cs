@@ -30,7 +30,7 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // GET: api/Movimiento
-        //[Authorize]
+        [Authorize]
         [HttpGet(Name = nameof(ConsultarTodosLosMovimientos))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<MovimientoDTO>>))]
         [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ApiResponse<IEnumerable<MovimientoDTO>>))]
@@ -54,7 +54,7 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // GET: api/Movimiento/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
+        [Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpGet("{id}")]
         public async Task<IActionResult> ConsultaMovimiento(int id)
         {
@@ -65,12 +65,12 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // POST: api/Movimiento
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> ModificarMovimiento(MovimientoDTO movimientoDTO)
+        public async Task<IActionResult> CrearMovimiento(MovimientoDTO movimientoDTO)
         {
             var movimiento = _mapper.Map<Movimiento>(movimientoDTO);
-            await _movimientoServicio.ModificarMovimiento(movimiento);
+            await _movimientoServicio.CrearMovimiento(movimiento);
             var movimientoDto = _mapper.Map<MovimientoDTO>(movimiento);
             var respuesta = ApiResponse<MovimientoDTO>.Create(movimientoDto);
             return Ok(respuesta);
@@ -78,7 +78,7 @@ namespace ProyectoBanco.Api.Controllers
         }
 
         // PUT: api/Movimiento/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
+        [Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpPut]
         public async Task<IActionResult> ModificarMovimiento(int id, MovimientoDTO movimientoDTO)
         {
@@ -91,7 +91,7 @@ namespace ProyectoBanco.Api.Controllers
 
 
         // DELETE: api/Movimiento/int
-        //[Authorize(Roles = nameof(RolEspecifico.Administrador))]
+        [Authorize(Roles = nameof(RolEspecifico.Administrador))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> EliminarMovimiento(int id)
         {

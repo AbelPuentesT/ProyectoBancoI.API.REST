@@ -23,6 +23,7 @@ namespace ProyectoBanco.Core.Servicios
         }
         public async Task<Cuenta> ConsultarCuenta(int id)
         {
+            
             return await _unidadDeTrabajo.RepositorioCuenta.ConsultarPorId(id);
         }
 
